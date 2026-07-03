@@ -1,3 +1,6 @@
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green?logo=node.js)
+![Gemini](https://img.shields.io/badge/Google-Gemini-orange)
 # 🤖 AI Code Reviewer
 
 An AI-powered code review application that analyzes source code using Google's Gemini AI and provides detailed feedback, suggestions, and improvements in a clean and interactive interface.
