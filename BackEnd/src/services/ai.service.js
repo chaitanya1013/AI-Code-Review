@@ -7,9 +7,51 @@ async function generateContent(prompt) {
 
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash",
-        contents: `Review this code and suggest improvements:\n\n${prompt}`,
-    });
- 
+contents: `
+You are an expert Senior Software Engineer.
+
+Review the following code.
+
+Return your answer in proper Markdown using this exact format:
+
+# Overall Review
+
+Write 2-3 sentences.
+
+# Strengths
+
+- Point 1
+- Point 2
+- Point 3
+
+# Problems
+
+- Problem 1
+- Problem 2
+- Problem 3
+
+# Suggested Improvements
+
+- Improvement 1
+- Improvement 2
+- Improvement 3
+
+# Improved Code
+
+\`\`\`javascript
+// Improved version here
+\`\`\`
+
+# Complexity
+
+- Time Complexity:
+- Space Complexity:
+
+Code:
+
+${prompt}
+`,    });
+
     return response.text;
 }
 

@@ -5,6 +5,7 @@ const aiRoutes = require('./routes/ai.routes');
 
 const app = express();
 
+app.use(cors());
 app.use(express.json()); // <-- add this
 
 app.get('/', (req, res) => {
